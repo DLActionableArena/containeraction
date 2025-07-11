@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 echo "Hello $INPUT_MYINPUT"
 memory=$(cat /proc/meminfo)
