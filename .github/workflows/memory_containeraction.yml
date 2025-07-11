@@ -15,6 +15,7 @@ jobs:
           myInput: "Manual execution from Daniel"
 
       - name: output
+        id: outputStep
         run: |
           echo "${{ steps.inputStep.outputs.memory }}"
           echo "Total memory output success!"
