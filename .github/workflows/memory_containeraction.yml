@@ -8,13 +8,13 @@ jobs:
       - name: Checkout the repo
         uses: actions/checkout@v4
 
-      - name: The input step
+      - name: input
         id: inputStep
         uses: ./
         with:
           myInput: "Manual execution from Daniel"
 
-      - name: The output step
+      - name: output
         run: |
           echo "${{ steps.inputStep.outputs.memory }}"
           echo "Total memory output success!"
