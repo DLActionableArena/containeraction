@@ -1,0 +1,15 @@
+name: "Container Based Action"
+description: "A Sample action using Docker Container to get memory info"
+authod: "Daniel Lavalliere"
+inputs:
+  myInput: 
+    description: "Grretings from container based action"
+    required: true
+    default: "myInput default value"
+outputs:
+  myOutput:
+    description: "Total memory"
+    
+runs:
+  using: "docker"
+  image: "Dockerfile"
